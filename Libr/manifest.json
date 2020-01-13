@@ -1,0 +1,35 @@
+{
+"name":"Library",
+"short_name":"Library",
+"start_url":" .",
+"display":"standalone",
+"background_color":"#fff",
+"description":"School Library online management systeam ",
+   "icons":[{ 
+"src":"image/icons/logo_32.png",
+    "sizes":"32×32",
+    "type":"image/png"
+   },
+       
+{"src":"image/icons/logo_72.png",
+    "sizes":"72×72",
+    "type":"image/png"
+   },
+    {"src":"image/icons/logo_128.png",
+    "sizes":"128×128",
+    "type":"image/png"
+   },
+        
+{
+    "src":"image/icons/logo_144.png",
+    "sizes":"144×144",
+    "type":"image/png"
+   },
+            
+    {
+    "src":"image/icons/logo_168.png",
+    "sizes":"168×168",
+    "type":"image/png"        
+            
+}]
+}

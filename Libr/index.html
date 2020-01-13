@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="view/css/lib.css">
+<title>Bootstrap 4 Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+<script src="bootstrap/jquery/jquery.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/lib.js"></script>
+
+
+
+
+<style>
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+<body >
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--- navbar--->
+  <nav class=" navbar navbar-expand-sm bg-primary">
+    <div class="row">
+      <div class="col-sm-4 col-xs-offset-2">
+        <ul class="nav navbar-nav " >
+          <li>
+            <p>
+              <a class=" text-white" class="navbar-brand" href="#">
+                <img src="view/image/logo.png" alt="logo"  class="center-block" style="width:100px; display:;">
+              </a>
+            </p>
+            <p class="text-center"><span style="font-size: 28px;"><strong>SHIV LIBRARY</strong></span></p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-xs-offset-2 ">
+
+      <ul class="nav nav-tabs">
+
+
+  <li class="nav-item">
+    <a href="#book1" onclick="fetchbook()" class="nav-link" data-toggle="tab" class=" text-white text-right">Book</a>
+  </li>
+  <li class="nav-item">
+    <a href="#EVENT" class="nav-link" data-toggle="tab" class=" text-white text-right">EVENT</a>
+  </li>
+  <li class="nav-item">
+    <a href="#about_us" class="nav-link" data-toggle="tab" class=" text-white text-right" >About us</a>
+  </li>
+    <li class="nav-item">
+    <a href="#Staff" class="nav-link" data-toggle="tab" class=" text-white text-right" onclick="Staff()">Library Staff</a>
+  </li>
+  <li class="nav-item">
+    <a href="#Login" class="nav-link" data-toggle="tab" class=" text-white text-right">Login</a>
+  </li>
+  <li class="nav-item">
+<a href="#Register" class="nav-link" data-toggle="tab" class=" text-white text-right">Register</a>
+  </li>
+  <li class="nav-item">
+    <a href="#My_Profile" class="nav-link" data-toggle="tab" class=" text-white text-right"  onclick="pro()">My Profile</a>
+  </li>
+      <li class="nav-item">
+    <a href="#My_Borrowing" class="nav-link" data-toggle="tab" class=" text-white text-right"  onclick="Borrowing()">My Borrowing</a>
+  </li>
+  <li class="nav-item">
+    <a href="model/logout.php" class="nav-link" data-toggle="tab" class=" text-white text-right" onclick ='logout()'>Logout</a>
+
+
+  </li>
+
+
+
+       <li><form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="search" >
+              <div class="input-group-btn">
+                <button class="btn btn-default text-right" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </li>
+
+
+
+</ul>
+    </div>
+        <div class="col-sm-2 float-right" style="font-size: 22px;">
+
+        </div>
+
+  </div>
+     </nav>
+
+
+    <button id="switch" onclick="toggleTheme()"> Change Theme Switch</button>
+
+  <div class="row">
+      <div class="col-md-12">
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div id="Login" class="container tab-pane active"><br>
+
+
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+    <div id="demo" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="view/image/lib6.jpg" alt="Los Angeles" style="height: 400px;">
+        </div>
+        <div class="carousel-item">
+          <img src="view/image/lib7.jpg" alt="Chicago" style="height: 400px;">
+        </div>
+        <div class="carousel-item">
+          <img src="view/image/lib8.jpg" alt="New York" style="height: 400px;">
+        </div>
+        <div class="carousel-item">
+          <img src="view/image/lib9.jpg" alt="New York" style="height: 400px;">
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+</div>
+<div id="login">
+  <h3 class="text-center text-white pt-5">Login form</h3>
+  <div class="container">
+    <div id="login-row" class="row justify-content-center align-items-center">
+      <div id="login-column" class="col-md-6">
+        <div id="login-box" class="col-md-12">
+
+
+            <form action="" method="post">
+    <input type="hidden" name="request_function" value="addlogin">
+    <h3 class="text-center text-primary">login</h3>
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input type="Email" name="Email1" id="Email1"  placeholder="Email"  class="form-control" required>
+    </div><br>
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input type="password" name="password1" id="password1"  placeholder="password"  class="form-control" required>
+    </div><br>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary" onclick="addlogin()">login</button>
+    </div>
+  </form>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <!-Register------------------------>
+       <div id="Register" class="container tab-pane fade"><br>
+       <form  name="myForm"   action="" onsubmit="return validateForm()" method="post">  >
+            <input type="hidden" name="request_function" value="Register">
+            <h3 class="text-center text-primary">Register</h3>
+            <div class="form-group">
+              <label for="username" class="text-primary"> Name:</label><br>
+              <input type="text" name="Name" id="Name"     class="form-control" required>
+
+            </div>
+            <div class="form-group">
+              <label for="username" class="text-primary">Last Name:</label><br>
+              <input type="text" name="lastName" id="lastName"   class="form-control" required>
+
+            </div>
+
+            <div class="form-group">
+              <label for="username" class="text-primary">Email:</label><br>
+              <input type="email" name="Email" id="Email"  class="form-control" required>
+
+            </div>
+            <div class="form-group">
+              <label for="PhoneNo" class="text-primary">phone No:</label><br>
+              <input type="tel"    name="PhoneNo" id="PhoneNo" class="form-control" required>
+
+            </div>
+           <div class="form-group">
+              <label for="username" class="text-primary">Address:</label><br>
+              <input type="text" name="address" id="address" class="form-control" required>
+
+            </div>
+            <div class="form-group">
+              <label for="password" class="text-primary">password:</label><br>
+              <input type="password" name="password" id="password"  pattern=".{6,}" title="Six or more characters" class="form-control" required>
+
+            </div>
+            <div class="form-group">
+
+
+
+              <button type="submit" class="btn btn-primary"  onclick="Register()>Register</button>
+
+            </div>
+
+          </form>
+      </div>
+
+
+      <!---------------------register---->
+
+
+
+  <div id="EVENT" class="container tab-pane fade"><br>
+    <!--  Event page code here-->
+<div class="container" >
+  <div class="row">
+    <div class="col-sm-10 text-center">
+
+      <img class="rounded float-center " src="view/image/eve.jpg"   alt="Card image" >
+
+    <h1>This  month Events </h1>
+
+      <h2>Diwali Festival</h2>
+      <p>Monday, 28 Oct 2019 1:00 pm - 4:00 pm</p>
+      <p>Come let us celebrate together different cultures and embrace our diversity in our school. We present Diwali festival, a celebration time for all people globally to celebrate and fun togather.</p>
+
+
+
+
+      </div></div></div></div>
+  <div id="book1" class="container tab-pane fade"><br>
+
+<div class="container bg-light" >
+  <div class="row">
+ <!--------------------------------->
+       <form action="" method="get">
+        <input type="hidden" name="request_function" value="selectbook">
+
+      </form>
+
+  <div id='bookContent'>
+
+
+      <div class="col-md-9">
+      <div id="spinner-box3" class="row">
+
+      <div class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>
+
+      </div>
+    </div>
+            <!-- template content will go here-->
+          </div>
+
+      <script id="book" type="text/template">
+
+     <div class="col-sm-3 text-center">
+      <div class="card" style="width:200px">
+        <img class="card-img-top" data-toggle="modal" data-target="#{{bookId}}" src="{{bookImage}}" alt="Card image" width="100px" height="140px">
+        <button type="button" class="btn btn-primary">click on image tosee more info</button>
+        <div class="card-body">
+          <h4 class="card-title">Title:{{BookTitle}}</h4>
+          <p class="card-text">Author:{{bookAuthor}}</p>
+        </div>
+        </div>
+
+<div class="modal fade" id="{{bookId}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">Book</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body text-left">
+         <div class="row">
+    <div class="col-sm-4">
+   <img class="card-img-top" data-toggle="modal" data-target="#card_1" src="{{bookImage}}" alt="Card image" width="100px" height="140px">
+    </div>
+    <div class="col-sm-8" >
+    <h3><strong>BookTitle :{{BookTitle}}</strong></h3>
+      <h4><strong>Author : {{bookAuthor}}</strong></h4>
+    <h4><strong> Book Publisher : {{bookPublisher}}</strong></h4>
+        <h4><strong> Book Addtion :{{bookAddtion}}</strong></h4>
+        <h4><strong> Book Description : </strong> {{bookDes}}</h4>
+    </div>
+  </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="Borrow({{bookId}})">Borrow book</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+        </div>
+      </script>
+
+
+       <!------------------------------------------------>
+
+
+
+
+
+<!-- Modal -->
+
+    </div>
+      </div>
+
+
+      </div>
+<!-- about_us page -->
+  <div id="about_us" class="container tab-pane fade"><br>
+    <!--  about_us page code here-->
+
+      <div class="container" >
+  <div class="row">
+    <div class="col-sm-10 text-center">
+
+      <img class="rounded float-center " src="view/image/lib5.jpg"   alt="Card image" >
+
+<h1>SHIV LIBRARY </h1>
+        <h4>Location</h4>
+        <p>Hill Sports Drive and Mila Road, Richland, vid, 7009</p>
+        <h4>Contact</h4>
+        <p>Phone: 07 7777 0000</p>
+        <h4>Opening hours</h4>
+        <p>Monday, Wednesday and Friday</p>
+        <p>9 am - 4 pm</p>
+        <p>Tuesday, Thursday and Saturday</p>
+        <p>8am - 8 pm</p>
+        <p>Sunday</p>
+        <p>Closed</p>
+
+      </div></div></div></div>
+
+    <!-- Staff page -->
+    <div id="Staff" class="container tab-pane fade"><br>
+        <form action="" method="get">
+        <input type="hidden" name="request_function" value="Staff">
+      </form>
+
+
+       <div class="container">
+                        <table class="table table-bordered table-sm">
+                            <thead>
+                                <tr>
+
+                                    <th>Staff Name</th>
+                                    <th>Last Name</th>
+                                </tr>
+                            </thead>
+                            <tbody id='StaffContent'>
+                                <div class="col-md-9">
+      <div id="spinner-box" class="row">
+
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status"><span class="sr-only">Loading...</span>
+        </div></div>
+
+      </div>
+    </div>
+                                <!-- template content will go here-->
+                            </tbody>
+                        </table>
+                <script id="Staff1" type="text/template">
+                        <tr>
+                            <td>{{StaffName}}</td>
+                            <td>{{StaffLastName}}</td>
+                           </tr>
+                    </script>
+                </div></div>
+    <!--My_Profile page -->
+    <div id="My_Profile" class="container tab-pane fade"><br>
+        <form action="" method="get">
+        <input type="hidden" name="request_function" value="pro">
+      </form>
+        <div id='proContent'>
+             <div class="col-md-9">
+      <div id="spinner-box1" class="row">
+
+      <div class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>
+
+      </div>
+    </div>
+            <!-- template content will go here-->
+          </div>
+        <script id="pro1" type="text/template">
+        <div class="container">
+
+   <h2>MY PROFILE </h2>
+
+  <form action="" method="post"  >
+              <input type="hidden" name="request_function" value="Update">
+            <h3 class="text-center text-primary"></h3>
+            <div class="form-group">
+              <label for="username" class="text-primary"> Name:</label><br>
+              <input type="text"  name="Name2"value="{{Name}}" id="Name2"     class="form-control" required>
+
+            </div>
+            <div class="form-group">
+              <label for="username" class="text-primary">Last Name:</label><br>
+              <input type="text"  name="lastName2" value="{{lastName}}" id="lastName2"   class="form-control" required>
+
+            </div>
+
+            <div class="form-group">
+              <label for="username" class="text-primary">Email:</label><br>
+              <input type="text"name="Email2"   value="{{Email}}" id="Email2"  class="form-control" required>
+
+            </div>
+            <div class="form-group">
+              <label for="PhoneNo" class="text-primary">phone No:</label><br>
+              <input type="tel"  pattern="[47][0-9]{9}"   title="Please enter a phone # like 123456789. This field is required."  name="PhoneNo"  value="{{PhoneNo}}" id="PhoneNo2" class="form-control" required>
+
+            </div>
+           <div class="form-group">
+              <label for="username" class="text-primary">Address:</label><br>
+              <input type="text" name="address2"  value="{{address}}"id="address2" class="form-control" required>
+
+            </div>
+
+            <div class="form-group">
+
+
+
+              <button type="submit" class="btn btn-primary" onclick="Update()">Update</button>
+            </div>
+
+          </form>
+
+
+
+
+
+
+
+    </script>
+</div>
+
+<!--My_Borrowing page -->
+    <div id="My_Borrowing" class="container tab-pane fade"><br>
+        <form action="" method="get">
+        <input type="hidden" name="request_function" value="Borrowing">
+      </form>
+
+       <div class="container">
+                        <table class="table table-bordered table-sm">
+                            <thead>
+                                <tr>
+
+                                    <th>Student Name</th>
+                                    <th>Student Last Name</th>
+                                    <th>BookTitle</th>
+
+                                    <th>BookBorrrowingDueDate</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id='BorrowingContent'>
+                                <!-- template content will go here-->
+                            </tbody>
+                        </table>
+
+
+        <script id="Borrowing1" type="text/template">
+                        <tr>
+                            <td>{{Name}}</td>
+                            <td>{{lastName}}</td>
+                            <td>{{BookTitle}}</td>
+
+                            <td>{{BookBorrrowingDueDate}}</td>
+                        </tr>
+                    </script>
+                </div>
+
+    </div>
+       <!--Logout page -->
+      <div id="logout" class="container tab-pane fade"><br>
+        <form action="" method="post">
+        <input type="hidden" name="request_function" value="logout">
+      </form>
+
+
+<!--footer page -->
+
+  <div id="footer" class="bg-primary">
+  <div class="row">
+    <div class="col-sm-4 text-center">
+      <h3>Services</h3>
+      <p>3D Priting</p>
+      <p>Computers</p>
+    </div>
+    <div class="col-sm-4  text-center">
+      <h3>Facilities</h3>
+      <p>Hours and Location</p>
+      <p>Studies Room</p>
+    </div>
+    <div class="col-sm-4  text-center">
+      <h3>FAQ</h3>
+      <p>Books</p>
+    </div>
+  </div>
+</div>
+          </div></div></div>
+
+   <script>
+
+     islogin();
+
+
+      </script>
+
+
+</body>
+</html>
